@@ -4,10 +4,7 @@ services:
 
 before_install:
   - docker build -t framegenerator/docker-react -f Dockerfile.dev .
-
-#script:
-# - docker run framegenerator/docker-react npm run test -- --coverage
-
+  
 deploy:
   provider: elasticbeanstalk
   region: us-west-2
